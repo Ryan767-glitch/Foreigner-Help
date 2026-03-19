@@ -3,130 +3,383 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>東京都23区 外国人住民手続きポータル</title>
+    <title>日本生活SOS | 外国人・留学生・旅行者のための生活支援ポータル</title>
+    <meta
+      name="description"
+      content="病院、避難所、災害情報、役所手続き、相談窓口、生活フレーズを1か所にまとめた、外国人向け日本生活SOSポータル。"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="utility-bar">
-      <div class="container utility-inner">
-        <span>東京都23区対応 / 外国人住民向け</span>
-        <span class="pill">公式窓口の最新情報を必ず確認</span>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <p>For Foreign Residents, Students, Workers & Travelers in Japan</p>
+        <div class="topbar-badges">
+          <span>Emergency First</span>
+          <span>Official Links Curated</span>
+          <span>Mobile Friendly</span>
+        </div>
       </div>
     </div>
 
     <header class="hero">
-      <div class="container hero-inner">
-        <div>
-          <p class="kicker">行政手続きナビゲーター</p>
-          <h1>日本で暮らし始める手続きを、順番どおりに。</h1>
-          <p class="lead">
-            在留資格・居住区・家族構成などを選ぶだけで、東京都23区での生活開始に必要な手続きを
-            優先度つきチェックリストで表示します。
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">外国人向け「日本生活SOS」</p>
+          <h1>日本で困ったとき、最初に開くべき1ページ。</h1>
+          <p class="hero-lead">
+            病院、避難所、災害情報、役所手続き、相談窓口、生活フレーズを、在留外国人・留学生・技能実習／特定技能・旅行者向けに再設計。複雑で読みにくい公的情報を、圧倒的にわかりやすいUIでまとめた生活支援ポータルです。
           </p>
-          <a href="#wizard" class="cta">手続き診断をはじめる</a>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quick-actions">今すぐ使う</a>
+            <a class="btn btn-secondary" href="#solutions">法人向け導入を見る</a>
+          </div>
+
+          <div class="hero-trust">
+            <div>
+              <strong>24/7導線</strong>
+              <span>緊急・災害時の行動を最短で案内</span>
+            </div>
+            <div>
+              <strong>Public Source Hub</strong>
+              <span>入管・FRESC・自治体系への導線を統合</span>
+            </div>
+            <div>
+              <strong>B2C / B2B</strong>
+              <span>一般利用と学校・企業導入の両面に対応</span>
+            </div>
+          </div>
         </div>
-        <aside class="hero-card" aria-label="手続きの全体像">
-          <h2>まず押さえる4ステップ</h2>
-          <ol>
-            <li>在留カード・資格情報の確認</li>
-            <li>区役所で住民登録 / マイナンバー</li>
-            <li>健康保険・年金・税務の確認</li>
-            <li>銀行・通信・ライフライン契約</li>
-          </ol>
+
+        <aside class="hero-panel">
+          <div class="panel-glow"></div>
+          <p class="panel-label">SOS Dashboard</p>
+          <div class="status-stack">
+            <article>
+              <span class="status danger">Emergency</span>
+              <h2>救急・災害</h2>
+              <p>119 / 110、避難所、災害情報、多言語相談に即アクセス。</p>
+            </article>
+            <article>
+              <span class="status info">Life Setup</span>
+              <h2>生活手続き</h2>
+              <p>住民登録、保険、学校、銀行、SIMまで1つの流れで確認。</p>
+            </article>
+            <article>
+              <span class="status success">Daily Support</span>
+              <h2>会話フレーズ</h2>
+              <p>病院・役所・交通・住まいで使う日本語をすぐ表示。</p>
+            </article>
+          </div>
         </aside>
       </div>
     </header>
 
-    <main class="container main-grid">
-      <section id="wizard" class="panel form-panel">
-        <div class="panel-header">
-          <h2>条件を入力して、あなた向け手続きプランを作成</h2>
-          <span class="tag">所要時間: 約30秒</span>
+    <main>
+      <section id="quick-actions" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Quick Actions</p>
+            <h2>困りごと別に、最短でたどり着く。</h2>
+            <p>
+              初見でも迷わないよう、緊急度の高い導線をファーストビュー直下に配置。スマホで開いても1タップで次の行動へ進めます。
+            </p>
+          </div>
+
+          <div class="action-grid">
+            <a class="action-card critical" href="#emergency-guide">
+              <strong>病気・けが</strong>
+              <span>病院、救急、症状説明フレーズへ</span>
+            </a>
+            <a class="action-card danger" href="#disaster-hub">
+              <strong>地震・台風</strong>
+              <span>避難、ハザードマップ、災害情報へ</span>
+            </a>
+            <a class="action-card accent" href="#life-guide">
+              <strong>役所の手続き</strong>
+              <span>住民登録、保険、学校、税・年金</span>
+            </a>
+            <a class="action-card calm" href="#consultation">
+              <strong>相談したい</strong>
+              <span>FRESC、多言語相談、学校・労働相談へ</span>
+            </a>
+          </div>
         </div>
-
-        <div class="form-grid">
-          <label>
-            居住予定の区
-            <select id="wardSelect"></select>
-          </label>
-
-          <label>
-            在留資格の想定
-            <select id="statusSelect">
-              <option value="work">就労系（技人国・経営管理など）</option>
-              <option value="student">留学</option>
-              <option value="family">家族滞在・配偶者等</option>
-              <option value="longterm">永住者・定住者・特別永住者</option>
-            </select>
-          </label>
-
-          <label>
-            現在の状況
-            <select id="arrivalSelect">
-              <option value="new">海外から新規入国</option>
-              <option value="inside">日本国内で転入（他道府県・他市区町村）</option>
-            </select>
-          </label>
-
-          <label>
-            年齢
-            <select id="ageSelect">
-              <option value="adult">18歳以上</option>
-              <option value="minor">18歳未満</option>
-            </select>
-          </label>
-        </div>
-
-        <div class="checks">
-          <label class="check"><input type="checkbox" id="withFamily" /> 家族（配偶者・子ども）と同居する</label>
-          <label class="check"><input type="checkbox" id="needsPhone" checked /> 銀行口座開設・携帯契約が必要</label>
-        </div>
-
-        <button id="buildPlan">チェックリストを作成</button>
       </section>
 
-      <aside class="panel side-panel">
-        <h2>案内の見方</h2>
-        <ul class="legend">
-          <li><span class="dot urgent"></span> 至急（期限あり・14日以内等）</li>
-          <li><span class="dot important"></span> 重要（早めに対応）</li>
-          <li><span class="dot done"></span> 生活開始時に実施</li>
-        </ul>
-        <p>区によって必要書類や窓口名称が異なります。生成後の項目に沿って、対象区の公式サイトで最終確認してください。</p>
-      </aside>
+      <section id="audiences" class="section section-soft">
+        <div class="container">
+          <div class="section-heading compact">
+            <p class="eyebrow">Audience Modes</p>
+            <h2>ユーザー別に、必要情報を整理。</h2>
+          </div>
 
-      <section id="result" class="panel result-panel hidden">
-        <div class="result-header">
-          <h2>あなた向けの手続きプラン</h2>
-          <button id="printBtn">印刷 / PDF保存</button>
+          <div class="audience-grid">
+            <article class="audience-card active" data-audience-card="resident">
+              <span>01</span>
+              <h3>在留外国人</h3>
+              <p>生活立ち上げ、役所手続き、家族帯同、医療・災害対応。</p>
+            </article>
+            <article class="audience-card" data-audience-card="student">
+              <span>02</span>
+              <h3>留学生</h3>
+              <p>学校手続き、保険、アルバイト、住居探し、相談窓口。</p>
+            </article>
+            <article class="audience-card" data-audience-card="worker">
+              <span>03</span>
+              <h3>技能実習 / 特定技能</h3>
+              <p>労務、監理・支援、生活初期セット、緊急連絡導線。</p>
+            </article>
+            <article class="audience-card" data-audience-card="traveler">
+              <span>04</span>
+              <h3>旅行者</h3>
+              <p>急病、紛失、災害、交通障害、観光中の緊急サポート。</p>
+            </article>
+          </div>
+
+          <div class="audience-panel">
+            <div class="audience-content active" data-audience="resident">
+              <ul>
+                <li>転入・住所変更、マイナンバー、保険、年金、学校を優先表示</li>
+                <li>病院・避難所・相談窓口へ常時アクセスできる固定導線</li>
+                <li>生活フレーズや行政用語をやさしく再構成</li>
+              </ul>
+            </div>
+            <div class="audience-content" data-audience="student">
+              <ul>
+                <li>留学生向け保険・学校相談・アルバイト注意点を整理</li>
+                <li>大学・日本語学校が学生専用ポータルとして転用しやすい構成</li>
+                <li>入学直後に必要な生活セットアップを時系列で表示</li>
+              </ul>
+            </div>
+            <div class="audience-content" data-audience="worker">
+              <ul>
+                <li>勤務先・登録支援機関・監理団体と連携しやすいサポート設計</li>
+                <li>労働・住居・医療・災害時の多言語案内を一元化</li>
+                <li>本人だけでなく支援担当者が使っても迷わない導線</li>
+              </ul>
+            </div>
+            <div class="audience-content" data-audience="traveler">
+              <ul>
+                <li>急病、落とし物、交通障害、自然災害への即応を重視</li>
+                <li>観光中でも必要な連絡先とフレーズに最短でアクセス</li>
+                <li>多言語UIや保険・通信提携との相性が高い設計</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <p id="summary"></p>
-        <ol id="taskList"></ol>
       </section>
 
-      <section class="panel links-panel">
-        <h2>東京都23区 公式窓口リンク</h2>
-        <p class="note">最新の受付時間・必要書類は、各区公式ページで必ず再確認してください。</p>
-        <div id="wardLinks" class="ward-links"></div>
+      <section id="emergency-guide" class="section">
+        <div class="container grid-2">
+          <article class="info-panel emergency-panel">
+            <div class="section-heading left">
+              <p class="eyebrow">Emergency Guide</p>
+              <h2>緊急時に見るカード</h2>
+            </div>
+            <div class="emergency-numbers">
+              <div>
+                <span>119</span>
+                <p>救急・火事</p>
+              </div>
+              <div>
+                <span>110</span>
+                <p>警察</p>
+              </div>
+              <div>
+                <span>7119</span>
+                <p>救急相談（地域により対応）</p>
+              </div>
+            </div>
+            <ol class="check-list">
+              <li>自分の場所を確認し、住所・駅名・建物名を伝える</li>
+              <li>症状やけがの状態を短く説明する</li>
+              <li>保険証・在留カード・パスポートを準備する</li>
+              <li>必要に応じて通訳・家族・学校・勤務先へ連絡する</li>
+            </ol>
+          </article>
+
+          <article class="info-panel phrase-panel">
+            <div class="section-heading left">
+              <p class="eyebrow">Medical Phrase</p>
+              <h2>すぐ見せられる一言</h2>
+            </div>
+            <div class="phrase-tabs" role="tablist" aria-label="生活フレーズ">
+              <button class="phrase-tab active" data-phrase-tab="hospital">病院</button>
+              <button class="phrase-tab" data-phrase-tab="cityhall">役所</button>
+              <button class="phrase-tab" data-phrase-tab="housing">住まい</button>
+            </div>
+            <div class="phrase-group active" data-phrase-group="hospital">
+              <p>「熱があります。病院を探しています。」</p>
+              <p>“I have a fever. I need a hospital.”</p>
+              <p>「保険証はありますが、日本語があまり話せません。」</p>
+            </div>
+            <div class="phrase-group" data-phrase-group="cityhall">
+              <p>「住所登録の手続きをしたいです。」</p>
+              <p>“I want to complete my resident registration.”</p>
+              <p>「必要な書類を教えてください。」</p>
+            </div>
+            <div class="phrase-group" data-phrase-group="housing">
+              <p>「水が出ません。管理会社に連絡したいです。」</p>
+              <p>“There is no water. I need to contact building management.”</p>
+              <p>「ごみの出し方を教えてください。」</p>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <section class="panel source-panel">
-        <h2>情報ソース（一次情報）</h2>
-        <ul>
-          <li>法務省 出入国在留管理庁（在留カード・在留手続き）</li>
-          <li>総務省・各自治体（住民登録、マイナンバー）</li>
-          <li>厚生労働省・日本年金機構（健康保険・年金）</li>
-          <li>国税庁（税務関連）</li>
-          <li>東京都23区 各区役所公式サイト</li>
-        </ul>
+      <section id="disaster-hub" class="section section-dark">
+        <div class="container">
+          <div class="section-heading light">
+            <p class="eyebrow">Disaster Hub</p>
+            <h2>災害情報と避難導線を、迷わず確認。</h2>
+            <p>
+              地震・台風・豪雨・津波など、日本で特に不安になりやすい災害情報をひとまとめに。視認性の高いダッシュボードで平時から使える構成にしています。
+            </p>
+          </div>
+          <div class="disaster-grid">
+            <article>
+              <h3>避難行動</h3>
+              <ul>
+                <li>現在地から近い避難場所を確認</li>
+                <li>自治体の避難情報レベルを確認</li>
+                <li>家族・学校・勤務先との集合方法を共有</li>
+              </ul>
+            </article>
+            <article>
+              <h3>見るべき情報</h3>
+              <ul>
+                <li>自治体の防災ページ</li>
+                <li>ハザードマップ</li>
+                <li>気象・交通・ライフライン情報</li>
+              </ul>
+            </article>
+            <article>
+              <h3>多言語支援</h3>
+              <ul>
+                <li>やさしい日本語の案内</li>
+                <li>外国人相談窓口</li>
+                <li>旅行者向け安全情報への導線</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="life-guide" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Life Setup Guide</p>
+            <h2>生活立ち上げに必要なことを、順番で整理。</h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <span>Step 1</span>
+              <h3>来日直後</h3>
+              <p>住所、連絡先、在留カード、家族構成を整理して最初の手続き準備をする。</p>
+            </article>
+            <article>
+              <span>Step 2</span>
+              <h3>役所・学校・勤務先</h3>
+              <p>住民登録、保険、年金、就学、雇用関連の提出物をまとめて確認する。</p>
+            </article>
+            <article>
+              <span>Step 3</span>
+              <h3>生活インフラ</h3>
+              <p>銀行口座、SIM、交通IC、住居ルール、病院のかかり方を理解する。</p>
+            </article>
+            <article>
+              <span>Step 4</span>
+              <h3>困ったときの相談</h3>
+              <p>FRESC、自治体窓口、学校、企業、人材支援窓口へすぐ相談できるようにする。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="consultation" class="section section-soft">
+        <div class="container grid-2">
+          <article class="info-panel">
+            <div class="section-heading left">
+              <p class="eyebrow">Consultation</p>
+              <h2>相談窓口を、用途別に整理。</h2>
+            </div>
+            <div class="resource-list">
+              <a href="https://www.moj.go.jp/isa/support/portal/index.html" target="_blank" rel="noreferrer">外国人生活支援ポータル</a>
+              <a href="https://www.moj.go.jp/isa/support/fresc/fresc01.html" target="_blank" rel="noreferrer">FRESC</a>
+              <a href="https://www.mlit.go.jp/river/hazardmap/" target="_blank" rel="noreferrer">国土交通省 ハザードマップポータル</a>
+              <a href="https://www.anzen.mofa.go.jp/" target="_blank" rel="noreferrer">外務省 海外安全ホームページ</a>
+            </div>
+          </article>
+
+          <article class="info-panel highlight-panel">
+            <div class="section-heading left">
+              <p class="eyebrow">Why It Wins</p>
+              <h2>BtoCでもBtoBでも強い。</h2>
+            </div>
+            <ul class="bullet-list">
+              <li>BtoC: 広告、保険、通信、送迎、翻訳などの提携導線を設置しやすい</li>
+              <li>BtoB: 日本語学校、大学、外国人採用企業、監理団体、登録支援機関向けに提供可能</li>
+              <li>公的情報の見づらさを、民間品質のUI/UXで置き換えられる</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="solutions" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">B2B Solution</p>
+            <h2>法人・教育機関向けの導入イメージ</h2>
+            <p>学生・社員・実習生ごとに必要情報を出し分け、「あなたのための生活サポートポータル」として販売できる構成です。</p>
+          </div>
+
+          <div class="solution-grid">
+            <article>
+              <h3>日本語学校 / 大学</h3>
+              <p>入学案内、保険、病院、災害、生活ルール、相談室を1つのポータルに統合。</p>
+            </article>
+            <article>
+              <h3>外国人採用企業</h3>
+              <p>オンボーディング、生活立ち上げ、緊急対応、社内連絡導線を標準化。</p>
+            </article>
+            <article>
+              <h3>監理団体 / 登録支援機関</h3>
+              <p>技能実習・特定技能人材に必要な生活支援情報を、わかりやすく多言語導線化。</p>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="container footer">
-      <p>このサイトは一般的な案内です。個別事情（在留資格、就労先規定、家族構成）により必要手続きが変わるため、必ず所管窓口へ確認してください。</p>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">日本生活SOS</p>
+          <p>
+            公的情報を見やすく再構成した、外国人向け生活支援ポータルのコンセプト実装。
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Core Links</p>
+          <ul>
+            <li><a href="#quick-actions">Quick Actions</a></li>
+            <li><a href="#disaster-hub">Disaster Hub</a></li>
+            <li><a href="#life-guide">Life Setup</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Note</p>
+          <p>実際の運用時は対象自治体・対応言語・更新体制に応じて公式情報との同期設計が必要です。</p>
+        </div>
+      </div>
     </footer>
 
     <script src="app.js"></script>
