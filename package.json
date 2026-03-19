@@ -1,0 +1,9 @@
+{
+  "name": "japan-life-sos",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static portal for foreign residents, students, workers, and travelers in Japan.",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --bind 127.0.0.1"
+  }
+}
